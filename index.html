@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Document</title>
+</head>
+    <body>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-4">
+                        <label>Nombre
+                            <input type="text" class="input is-primary is-rounded" placeholder="escribi tu nombre"/>
+                            <input type="text" class="input is-small is-loading" placeholder="escribi tu nombre"/>
+                            <input type="text" class="input is-medium" disabled placeholder="escribi tu nombre"/>
+                            <input type="text" class="input is-large" placeholder="escribi tu nombre"/>
+                        </label>
+
+                        <label>Breve ensayo
+                            <!-- <div><textarea rows="20" cols="30"></textarea></div> // no es responsive -->
+                            <textarea class="textarea is-medium is-warning"></textarea>
+                        </label>
+
+                        <label>Pais
+                            <div class="select is-rounded">
+                                <select>
+                                    <option>Argentina</option>
+                                    <option>Uruguay</option>
+                                    <option>Brasil</option>
+                                </select>
+                            </div>
+                        </label>
+
+                        <label class="checkbox">Gatos <input type="checkbox" class="checkbox"/>
+                        </label>
+                        Perros <input type="checkbox" class="checkbox"/>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <!-- aca abajo muestro como y q etiquetas se deben usar para los forms con Bulma -->
+
+        <div class="columns">
+            <div class="column is-4">
+                <div class="field">
+                    <label class="label" for="nombre">Escribi tu nombre</label>
+                    <div class="control">
+                        <input type="text" class="input" name="nombre" placeholder="nombre">
+                    </div>
+                    <!-- <p class="help">Texto de ayuda</p> ES OPCIONAL -->
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Escribi tu email</label>
+                    <div class="control">
+                        <input type="text" class="input" name="email" placeholder="email">
+                    </div>
+                    <!-- <p class="help">Texto de ayuda</p> ES OPCIONAL -->
+                </div>
+                <div class="field">
+                    <label class="label" for="pet">Perro o gato</label>
+                    <div class="control">
+                        <label class="label">Perro
+                            <input type="radio" value="perro" name="pet">
+                        </label>
+                        <label class="label">Gato
+                            <input type="radio" value="gato" name="pet">
+                        </label>
+                    </div>
+                    <!-- <p class="help">Texto de ayuda</p> ES OPCIONAL -->
+                </div>
+
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Text input">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </div>
+                    <p class="help is-success">This username is available</p>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </span>
+                    </div>
+                    <p class="help is-danger">This email is invalid</p>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Select dropdown</option>
+                          <option>With options</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        I agree to the <a href="#">terms and conditions</a>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        Yes
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-link is-light">Cancel</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!-- <form action="">
+            <label></label>
+            <input type="text">
+            <input type="password">
+            <input type="color">
+            <input type="number">
+            <input type="email">
+            <input type="date">
+            <div>
+                <label>Clic aquí
+                    <input type="radio">
+                </label>
+            </div>
+            <input type="radio">
+            <input type="checkbox">
+            <textarea></textarea>
+            <select>
+                <option>Mdza</option>
+                <option>Cba</option>
+                <option>Baires</option>
+            </select>
+            <input type="submit">
+        </form>
+
+
+        <form action="/enviar" class="form2" method="post">
+            <label>email
+                <input type="email" name="email"/>
+            </label>
+            <label type="password">Password
+                <input type="password" name="password" id="password"/>
+            </label>
+            <label>Confirme password
+                <input type="password" name="confirmarPassword" id="confirmar-password"/>
+            </label>
+            <input type="submit" value="enviar formulario"/> -->
+        <!-- </form> -->
+
+        
+
+        <script src="index.js"></script>
+    </body>
+</html>
